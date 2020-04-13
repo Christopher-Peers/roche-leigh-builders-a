@@ -77,95 +77,193 @@ body > * {
 
 	/* ************************* services section ************************* */
 
-	.services {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		padding: 3rem 0.8rem;
-		text-align: center;
-	}
-	
-	.services__title {
-		margin-top: 0;
-	}
-	
-	.services_info-text {
-		font-size: 1.2rem;
-	}
-	
-	.service-cards {
-		display: flex;
-		flex-direction: column;
-		padding-top: 2rem;
-	}
-	
-	.service-card {
-		align-items: center;
-		background-color: white;
-		border-radius: 0.7rem;
-		box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.4);
-		color: black;
-		display: flex;
-		flex-direction: column;
-		height: 16rem;
-		justify-content: center;
-		padding: 1rem;
-		transition: transform 0.4s;
-		width: 16rem;
-	}
-	
-	.service-card:not(:first-child) {
-		margin-top: 1.5rem;
-	}
-	
-	.service-card:hover,
-	.service-card:focus {
-		transform: scale(1.1);
-	}
-	
-	.service-card__icon-wrapper {
-		align-items: center;
-		background-image: linear-gradient(90deg, #4f6793 20%, #21497A 100%);
-		background-size: 4rem;
-		border-radius: 50%;
-		display: flex;
-		flex-direction: column;
-		height: 4rem;
-		justify-content: center;
-		width: 4rem;
-	}
-	
-	.service-card:hover .service-card__icon-wrapper {
-		background-color: #181616;
-		background-image: none;
-		transition: all 0.4s ease;
-	}
-	
-	.service-card__icon {
-		color: black;
-		font-size: 2rem;
-	}
-	
-	.service-card__title {
-		margin: 0;
-	}
-	
-	.service-card__info {
-		padding: 2rem 0;
-	}
-	
-	.service-card__info-text {}
-	
-	.service-card:hover .fa-hammer:before,
-	.service-card:hover .fa-tools:before,
-	.service-card:hover .fa-hard-hat:before {
-		-webkit-background-clip: text; /* wont work on chrome without prefix */
-		background-clip: text;
-		background-image: linear-gradient(90deg, #4f6793 20%, #21497A 100%);
-		color: transparent;
-		position: relative;
-		transition: all 0.4s ease;
-	}
+.services {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0.8rem;
+	text-align: center;
+}
+
+.services__title {
+	margin-top: 0;
+}
+
+.services_info-text {
+	font-size: 1.2rem;
+}
+
+.service-cards {
+	display: flex;
+	flex-direction: column;
+	padding-top: 2rem;
+}
+
+.service-card {
+	align-items: center;
+	background-color: white;
+	border-radius: 0.7rem;
+	box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.4);
+	color: black;
+	display: flex;
+	flex-direction: column;
+	height: 16rem;
+	justify-content: center;
+	padding: 1rem;
+	transition: transform 0.4s;
+	width: 16rem;
+}
+
+.service-card:not(:first-child) {
+	margin-top: 1.5rem;
+}
+
+.service-card:hover,
+.service-card:focus {
+	transform: scale(1.1);
+}
+
+.service-card__icon-wrapper {
+	align-items: center;
+	background-image: linear-gradient(90deg, #4f6793 20%, #21497A 100%);
+	background-size: 4rem;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	height: 4rem;
+	justify-content: center;
+	width: 4rem;
+}
+
+.service-card:hover .service-card__icon-wrapper {
+	background-color: #181616;
+	background-image: none;
+}
+
+.service-card__icon {
+	color: black;
+	font-size: 2rem;
+}
+
+.service-card__title {
+	margin: 0;
+}
+
+.service-card__info {
+	padding: 2rem 0;
+}
+
+.service-card__info-text {}
+
+.service-card:hover .fa-hammer:before,
+.service-card:hover .fa-tools:before,
+.service-card:hover .fa-hard-hat:before {
+	-webkit-background-clip: text; /* wont work on chrome without prefix */
+	background-clip: text;
+	background-image: linear-gradient(90deg, #4f6793 20%, #21497A 100%);
+	color: transparent;
+	position: relative;
+	transition: all 0.4s ease;
+}
+
+	/* ************************* recent projects section ************************* */
+
+.recent-projects-wrapper {
+	background-color: #f8f9fa;
+	width: 100%;
+}
+
+.recent-projects {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0.8rem;
+}
+
+.recent-project-cards {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.recent-projects__title {
+	margin: 0;
+}
+
+.recent-project-card {
+	height: 20rem;
+	overflow: hidden;
+	width: 100%;
+}
+
+.recent-project-card:not(first) {
+	margin-bottom: 8px;
+}
+
+.recent-project-card__image {
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	transition-duration: .5s;
+	transition-property: transform;
+	width: 100%;
+}
+
+.recent-project-card__image--a {
+	background-image: url("/images/house_exterior.jpeg");
+}
+.recent-project-card__image--b {
+	background-image: url("/images/man_and_insulation.jpg");
+}
+.recent-project-card__image--c {
+	background-image: url("/images/grinding_metal_baton.jpg");
+}
+
+.recent-project-card__image:before {
+	background-color: rgba(52, 73, 94, 0.75);
+	content: "";
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.recent-project-card:hover .recent-project-card__image,
+.recent-project-card:focus .recent-project-card__image {
+	transform: scale(1.2);
+}
+
+.recent-project-card:hover .recent-project-card__image:before,
+.recent-project-card:focus .recent-project-card__image:before {
+	display: block;
+}
+
+.recent-project-card__hover-description {
+	bottom: 0;
+	color: white;
+	display: none;
+	font-family: sans-serif;
+	left: 0;
+	margin: auto;
+	padding: 25%;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	top: 0;
+}
+
+.recent-project-card:hover a.recent-project-card__hover-description,
+.recent-project-card:focus a.recent-project-card__hover-description {
+	display: block;
+}
+
+.recent-project-card__description {}
 	
 @media screen and (min-width: 480px) {
 
@@ -236,6 +334,30 @@ body > * {
 
 	.service-card:not(:first-child) {
 		margin-left: 2rem;
+	}
+
+	/* ************************* recent projects section ************************* */
+
+	.recent-projects {
+		padding: 7rem 0;
+	}
+
+	.recent-project-cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 62rem;
+	}
+
+	.recent-project-card {
+		max-height: 20rem;
+		max-width: 20rem;
+		min-height: 20rem;
+		min-width: 20rem;
+	}
+
+	.recent-project-card:not(first) {
+		margin-left: 0.5rem;
 	}
 
 }
