@@ -16,7 +16,7 @@ body > * {
 
 .background-container {
 	align-items: center;
-	background-image: url("/images/grinder.jpg");
+	background-image: url("./images/grinder.jpg");
 	background-position: center;
 	background-size: cover;
 	color: white;
