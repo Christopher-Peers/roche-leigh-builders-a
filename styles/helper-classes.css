@@ -1,0 +1,12 @@
+.seperator {
+	align-self: center;
+	background-color: #21497A;
+	height: 2px; /* no rem as this does not want to become taller due to larger font size */
+	width: 3rem;
+    border-radius: 2px;
+    margin: 1.5rem 0;
+}
+
+.seperator--left-align {
+	align-self: flex-start;
+}
