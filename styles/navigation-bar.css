@@ -43,6 +43,7 @@
 	top: 3.2rem;
 	transition: all .2s ease-out;
 	width: 100%;
+	z-index: 5;
 }
 
 .navigation-menu--active {
