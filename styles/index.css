@@ -213,13 +213,13 @@ body > * {
 }
 
 .recent-project-card__image--a {
-	background-image: url("/images/house_exterior.jpeg");
+	background-image: url("../images/house_exterior.jpeg");
 }
 .recent-project-card__image--b {
-	background-image: url("/images/man_and_insulation.jpg");
+	background-image: url("../images/man_and_insulation.jpg");
 }
 .recent-project-card__image--c {
-	background-image: url("/images/grinding_metal_baton.jpg");
+	background-image: url("../images/grinding_metal_baton.jpg");
 }
 
 .recent-project-card__image:before {
