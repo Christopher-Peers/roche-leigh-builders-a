@@ -6,7 +6,42 @@
     <title>Roche Leigh Construction</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
 
+<body>
+    <nav class="navigation-bar">
+	
+        <div class="navigation-bar__company-details">
+
+            <i class="fa fa-lg fa-phone" aria-hidden="true"></i>
+            <span>07957076699</span>
+            <i class="fa fa-lg fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-lg fa-envelope" aria-hidden="true"></i>
+            <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-lg fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-lg fa-google-plus" aria-hidden="true"></i>
+
+        </div>
+
+		<svg id="hamburger-menu-icon" class="navigation-bar__hamburger-menu" viewBox="0 0 80 50" width="30" height="30" onclick="toggleMenu()">
+			<rect width="80" height="10" rx="5" fill="white"></rect>
+			<rect y="20" width="80" height="10" rx="5" fill="white"></rect>
+			<rect y="40" width="80" height="10" rx="5" fill="white"></rect>
+		</svg>
+	
+    </nav>
+    
+    <div class="navigation-menu">
+
+		<ul class="navigation-menu__links">
+			<li class="navigation-menu__link"><a href="#about">About Us</a></li>
+			<li class="navigation-menu__link"><a href="#services">Our Services</a></li>
+			<li class="navigation-menu__link"><a href="#testimonials">Typical Journey</a></li>
+			<li class="navigation-menu__link"><a href="#recent-projects">Recent Projects</a></li>
+        </ul>
+
+	</div>
+
+    <script src="https://kit.fontawesome.com/8f65b50ba2.js" crossorigin="anonymous"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
