@@ -2,11 +2,68 @@
 @import url('navigation-bar.css');
 
 html, body {
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+}
+
+body > * {
+	box-sizing: border-box;
+}
+
+.background-container {
+	align-items: center;
+	background-image: url("/images/grinder.jpg");
+	background-position: center;
+	background-size: cover;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 3rem;
+	min-height: calc(100vh - 7rem);
+	padding-top: 4rem;
+	text-align: center;
+	width: 100%;
+}
+
+.background-container h1,
+.background-container h2 {
+	line-height: 0;
+}
+
+.background-container__title-xl {
+	display: none;
+}
+
+@media screen and (min-width: 480px) {
+
+	.background-container  {
+		min-height: calc(100vh - 9rem); /* navigation-bar height * padding-top */
+		padding-top: 6rem;
+	}
+
+	.background-container svg {
+		width: 200px;
+		height: 200px
+	}
+
+	.background-container__title {
+		display: none;
+	}
+
+	.background-container__construction {
+		display: none;
+	}
+
+	.background-container__title-xl {
+		display: inline-block;
+		font-size: 4rem;
+		font-weight: bold;
+		margin-top: 2rem;
+	}
+
 }
