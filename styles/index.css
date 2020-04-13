@@ -58,12 +58,12 @@ body > * {
 .experts-container__title {}
 
 .experts-container__info-text {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	font-size: 1.2rem;
 	font-weight: 300;
+	justify-content: center;
+	width: 100%;
 }
 
 .experts-container__image-wrapper {
@@ -71,10 +71,102 @@ body > * {
 }
 
 .experts-container__image {
-	width: 100%;
 	object-fit: cover;
+	width: 100%;
 }
 
+	/* ************************* services section ************************* */
+
+	.services {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		padding: 3rem 0.8rem;
+		text-align: center;
+	}
+	
+	.services__title {
+		margin-top: 0;
+	}
+	
+	.services_info-text {
+		font-size: 1.2rem;
+	}
+	
+	.service-cards {
+		display: flex;
+		flex-direction: column;
+		padding-top: 2rem;
+	}
+	
+	.service-card {
+		align-items: center;
+		background-color: white;
+		border-radius: 0.7rem;
+		box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.4);
+		color: black;
+		display: flex;
+		flex-direction: column;
+		height: 16rem;
+		justify-content: center;
+		padding: 1rem;
+		transition: transform 0.4s;
+		width: 16rem;
+	}
+	
+	.service-card:not(:first-child) {
+		margin-top: 1.5rem;
+	}
+	
+	.service-card:hover,
+	.service-card:focus {
+		transform: scale(1.1);
+	}
+	
+	.service-card__icon-wrapper {
+		align-items: center;
+		background-image: linear-gradient(90deg, #4f6793 20%, #21497A 100%);
+		background-size: 4rem;
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		height: 4rem;
+		justify-content: center;
+		width: 4rem;
+	}
+	
+	.service-card:hover .service-card__icon-wrapper {
+		background-color: #181616;
+		background-image: none;
+		transition: all 0.4s ease;
+	}
+	
+	.service-card__icon {
+		color: black;
+		font-size: 2rem;
+	}
+	
+	.service-card__title {
+		margin: 0;
+	}
+	
+	.service-card__info {
+		padding: 2rem 0;
+	}
+	
+	.service-card__info-text {}
+	
+	.service-card:hover .fa-hammer:before,
+	.service-card:hover .fa-tools:before,
+	.service-card:hover .fa-hard-hat:before {
+		-webkit-background-clip: text; /* wont work on chrome without prefix */
+		background-clip: text;
+		background-image: linear-gradient(90deg, #4f6793 20%, #21497A 100%);
+		color: transparent;
+		position: relative;
+		transition: all 0.4s ease;
+	}
+	
 @media screen and (min-width: 480px) {
 
 	.background-container  {
@@ -105,23 +197,45 @@ body > * {
 	/* ************************* experts section ************************* */
 
 	.experts-container {
+		align-items: center;
 		flex-direction: row;
-		max-width: 80rem;
 		margin-left: auto;
 		margin-right: auto;
-		align-items: center;
+		max-width: 80rem;
 		padding: 7rem 0;
 	}
 
 	.experts-container__info-text {
-		width: 50%;
 		padding: 0 2rem;
 		text-align: left;
+		width: 50%;
 	}
 
 	.experts-container__image {
-		width: 33.75rem;
 		height: 33.75rem;
+		width: 33.75rem;
+	}
+
+	.services {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 60rem;
+		padding: 7rem 0;
+	}
+
+	/* ************************* services section ************************* */
+
+	.service-cards {
+		flex-direction: row;
+		padding-top: 4rem;
+	}
+
+	.service-cards .service-card {
+		margin-top: 0;
+	}
+
+	.service-card:not(:first-child) {
+		margin-left: 2rem;
 	}
 
 }
