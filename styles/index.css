@@ -321,7 +321,7 @@ body > * {
 	text-align: center;
 }
 	
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 
 	.background-container  {
 		min-height: calc(100vh - 9rem); /* navigation-bar height * padding-top */
